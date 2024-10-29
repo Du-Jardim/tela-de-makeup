@@ -1,0 +1,94 @@
+.css{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #491407;
+    padding: 10px 20px;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar{
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+#search-button{
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#search-button:hover{
+    background-color: #777;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0,0,0);
+    border-radius: 80%;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 80%;
+}
+
+.logo span{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(252,252,252,0.849);
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    color: rgb(255,255,255);
+    margin-left: 20px;
+}
+
+.icon img{
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+    cursor: pointer;
+    color: #ffff;
+}
+
+.icon:hover img{
+    filter: invert(80%);
+}
+
