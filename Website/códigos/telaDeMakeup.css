@@ -1,0 +1,88 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*estilização do banner*/
+.banner{
+    width: 100%;
+    background-color: #d32f2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/*layout principal*/
+.container{
+    display: flex;
+}
+
+/*Estilização de menu filtros*/
+.filtros{
+    width: 20%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.filtros h3{
+    margin-top: 0;
+}
+
+.filtros ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.filtros li{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.filtros li:hover{
+    color: #d32f2f;
+}
+
+/*EStilização da área produtos*/
+.produtos{
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto{
+    width: 23%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.produto img{
+    width: 100%;
+    height: auto;
+}
+
+.produtos .detalhes{
+    padding: 10px;
+}
+
+.produtos .nome{
+    font-weight: bold;
+}
+
+.produto .descricao{
+    color: #555;
+    font-size: 0.9em;
+}
+
+.produto .preco{
+    color: #d32f2f;
+    font-size: 1.2em;
+    margin-top: 10px;
+}

@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pagina Makeup</title>
+	<link rel="stylesheet" href="telaDeMakeup.css">
+</head>
+<body>
+	<div class="banner">
+		<h1>Até 60% OFF em maquiagem!</h1>
+		<p>maquiagens para completar o necessaire</p>
+	</div>
+	<!--conteúdo principal-->
+	<div class="container">
+		<div class="filtros">
+			<h3>Filtros</h3>
+			<ul>
+				<li onclick="filtrarProdutos('Face')">Face</li>
+				<li onclick="filtrarProdutos('Lábios')">Lábios</li>
+				<li onclick="filtrarProdutos('Olhos')">Olhos</li>
+				<li onclick="filtrarProdutos('Sobrancelha')">Sobrancelha</li>
+				<li onclick="filtrarProdutos('Kits e Paletas')">Kits e Paletas</li>
+				<li onclick="filtrarProdutos('Acessórios')">Acessórios</li>
+				<li onclick="filtrarProdutos('Todos')">Todos</li>
+			</ul>
+		</div>
+			<div class="produtos" id="listaProdutos" >
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Base-1Light.png" alt="Light">
+					<div class="detalhes">
+						<p class="nome">Base Líquida</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Gloss-FentyBeauty.png" alt="Gloss Labial">
+					<div class="detalhes">
+						<p class="nome">Gloss Fenty Beauty</p>
+						<p class="descricao">Gloss labial</p>
+						<p class="preco">R$ 50,00</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Base-2Light.png" alt="Base Líquida">
+					<div class="detalhes">
+						<p class="nome">Base Líquida</p>
+						<p class="descricao">base líquida FB</p>
+						<p class="preco">R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Iluminador-Benefit.png" alt="Iluminador">
+					<div class="detalhes">
+						<p class="nome">Iluminador Benefit</p>
+						<p class="descricao">iluminador benefit</p>
+						<p class="preco">R$ 89,90</p>
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+	<script src="telaDeMakeup.js"></script>
+</body>
+</html> 
