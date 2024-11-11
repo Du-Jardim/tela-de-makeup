@@ -1,3 +1,23 @@
+//NAV BAR
+// Adiciona funcionalidade de redirecionamento ao clicar no logo//
+document.querySelector('.logo').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.href = 'index.html';  // Redireciona para a página inicial
+});
+
+// Funcionalidade de pesquisa
+document.querySelector('#search-button').addEventListener('click', function() {
+    const query = document.querySelector('#search-bar').value;
+    if (query) {
+        alert('Você pesquisou por: ' + query);
+        // Aqui você pode adicionar a lógica de pesquisa para redirecionar ou buscar produtos
+    } else {
+        alert('Digite algo para buscar.');
+    }
+});
+//NAV BAR
+
+
 //lista produtos exemplo
 
 //funcao para carregar os produtos na página

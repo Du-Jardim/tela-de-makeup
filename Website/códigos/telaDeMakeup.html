@@ -6,13 +6,71 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pagina Makeup</title>
 	<link rel="stylesheet" href="telaDeMakeup.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="banner">
-		<h1>Até 60% OFF em maquiagem!</h1>
-		<p>maquiagens para completar o necessaire</p>
-	</div>
-	<!--conteúdo principal-->
+	<!--nav bar-->
+	<nav class="navbar">
+        <div class="navbar-left">
+            <a href="" class="logo">
+                <img src="IMG/logo skin tones.jpeg" alt="Logo do E-commerce">
+                <span>SKIN TONES</span>
+            </a>
+        </div>
+        <div class="navbar-center">
+            <input type="text" id="search-bar" placeholder="Buscar produtos...">
+            <button id="search-button">Buscar</button>
+        </div>
+        <div class="navbar-right">
+            <a href="#" class="icon">
+                <img src="IMG/usuario.png" alt="usuario">
+            </a>
+            <a href="#" class="icon">
+                <img src="IMG/centro de compras.png" alt="sacola">
+            </a>
+            <a href="#" class="icon">
+                <img src="IMG/favoritos 50x50.png" alt="Favoritos">
+            </a>
+            <a href="#" class="icon">
+                <img src="IMG/menu.png" alt="Menu">
+            </a>
+        </div>
+    </nav>
+    <div class="section">
+        <ul>
+          <li>
+            <a href="" >+ Vendidos</a>
+          </li>
+          <li>
+            <a  href="skincare.html">Skin care</a>
+          </li> 
+          <li>
+            <a href="blogs.html" >Blogs</a>
+          </li>
+          <li>
+            <a href="telaDeMakeup.html">Makeup</a>
+          </li>
+        </ul>
+    </div>
+    <hr style="border: 1px solid #491407; width: 100%;"> <!-- Linha personalizada -->
+  
+
+<!--banner-->
+  <section class="Banner-all">
+     <div class="banner-all">
+        <img src="IMG/intimtely.png" alt="">
+     </div>
+  </section>
+
+  <br>
+ 
+<!--banner-->
+ 
+
+ <hr style="border: 1px solid #491407; width: 95%;margin:20px;">
+	<!--nav bar-->
+
+	<!--Produtos-->
 	<div class="container">
 		<div class="filtros">
 			<h3>Filtros</h3>
@@ -21,14 +79,23 @@
 				<li onclick="filtrarProdutos('Lábios')">Lábios</li>
 				<li onclick="filtrarProdutos('Olhos')">Olhos</li>
 				<li onclick="filtrarProdutos('Sobrancelha')">Sobrancelha</li>
-				<li onclick="filtrarProdutos('Kits e Paletas')">Kits e Paletas</li>
 				<li onclick="filtrarProdutos('Acessórios')">Acessórios</li>
 				<li onclick="filtrarProdutos('Todos')">Todos</li>
 			</ul>
 		</div>
 			<div class="produtos" id="listaProdutos" >
+				<!--produtos Face-->
 				<div class="produto" data-categoria="Face">
-					<img src="imagens/Base-1Light.png" alt="Light">
+					<img src="imagens/Face/PóTranslucido_FentyBeauty.png" alt="Pó translucido">
+					<div class="detalhes">
+						<p class="nome">Pó translucido</p>
+						<p class="descricao">Pó</p>
+						<p class="preco">R$ 50,00</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/Base-1Light.png" alt="Light">
 					<div class="detalhes">
 						<p class="nome">Base Líquida</p>
 						<p class="descricao">Cobertura Natural</p>
@@ -36,17 +103,17 @@
 					</div>
 				</div>
 
-				<div class="produto" data-categoria="Lábios">
-					<img src="imagens/Gloss-FentyBeauty.png" alt="Gloss Labial">
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/BronzerCremoso_FentyBeauty.png" alt="Bronzer">
 					<div class="detalhes">
-						<p class="nome">Gloss Fenty Beauty</p>
-						<p class="descricao">Gloss labial</p>
-						<p class="preco">R$ 50,00</p>
+						<p class="nome">Bronzer Cremoso</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
 					</div>
 				</div>
 
 				<div class="produto" data-categoria="Face">
-					<img src="imagens/Base-2Light.png" alt="Base Líquida">
+					<img src="imagens/Face/Base-2Light.png" alt="Base Líquida">
 					<div class="detalhes">
 						<p class="nome">Base Líquida</p>
 						<p class="descricao">base líquida FB</p>
@@ -55,11 +122,808 @@
 				</div>
 
 				<div class="produto" data-categoria="Face">
-					<img src="imagens/Iluminador-Benefit.png" alt="Iluminador">
+					<img src="imagens/Face/Iluminador-Benefit.png" alt="Iluminador">
 					<div class="detalhes">
 						<p class="nome">Iluminador Benefit</p>
 						<p class="descricao">iluminador benefit</p>
 						<p class="preco">R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/BaseEmBastão_FentyBeauty.png" alt="Base em bastão">
+					<div class="detalhes">
+						<p class="nome">Base em bastão</p>
+						<p class="descricao">Base bastão</p>
+						<p class="preco">R$ 90,00</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/BlushCremoso_FentyBeauty.png" alt="Blush Cremoso">
+					<div class="detalhes">
+						<p class="nome">Blush Cremoso</p>
+						<p class="descricao">Tom natural</p>
+						<p class="preco"> R$ 69,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/BlushEmBastão_FentyBeauty.png" alt="Blush em bastão">
+					<div class="detalhes">
+						<p class="nome">Blush em bastão</p>
+						<p class="descricao">Ótima pigmentação</p>
+						<p class="preco"> R$ 60,00</p>
+					</div>
+				</div>
+				
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/BronzerCremoso_FentyBeauty.png" alt="Bronzer Cremoso">
+					<div class="detalhes">
+						<p class="nome">Bronzer Cremoso</p>
+						<p class="descricao">Boa pigmentação</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/Corretivo_FentyBeauty.png" alt="Corretivo ">
+					<div class="detalhes">
+						<p class="nome">Corretivo</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 90,00</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/CorretivoIluminador_FentyBeauty.png" alt="Corretivo Iluminador">
+					<div class="detalhes">
+						<p class="nome">Corretivo iluminador</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+				
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/Iluminador-RB.png" alt="Iluminador RB">
+					<div class="detalhes">
+						<p class="nome">Iluminador</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/Primer_FentyBeauty.png" alt="Primer">
+					<div class="detalhes">
+						<p class="nome">Primer</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/IluminadorDiamont_FentyBeauty.png" alt="Iluminador Diamont">
+					<div class="detalhes">
+						<p class="nome">Iluminador Diamont</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/BrumaFacial_FentyBeauty.png" alt="Bruma Facial">
+					<div class="detalhes">
+						<p class="nome">Bruma Facial</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/IluminadorLíquido_FentyBeauty.png" alt="Iluminador Líquido RB">
+					<div class="detalhes">
+						<p class="nome">Iluminador Líquido</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Face">
+					<img src="imagens/Face/BlushLíquido_FentyBeauty.png" alt="Blush Líquido">
+					<div class="detalhes">
+						<p class="nome">Blush Líquido</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+				<!--Produtos Lábios-->
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/batomFentyBeauty.png" alt="Batom Fenty Beuaty">
+					<div class="detalhes">
+						<p class="nome">Batom Fenty Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/batomLíquidoRareBeauty .png" alt="Batom Liquido Rare Beauty">
+					<div class="detalhes">
+						<p class="nome">Batom Liquido Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/batomMatteRareBeauty.png" alt="Batom Matte Rare Beauty">
+					<div class="detalhes">
+						<p class="nome">Batom Matte Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/Gloss-FentyBeauty.png" alt="BatomStickMatte-NudeIntenso">
+					<div class="detalhes">
+						<p class="nome">Batom Stick Matte – Nude Intenso</p>
+						<p class="descricao">O Batom Stick Matte em Nude Intenso oferece cor rica e acabamento opaco que realça os lábios de forma sofisticada. Com uma fórmula cremosa e hidratante, ele desliza facilmente e dura o dia todo, sem ressecar. Ideal para todos os tons de pele, especialmente as peles negras, que buscam um nude elegante. Perfeito para o dia a dia e eventos especiais.</p>
+						<p class="preco"> R$ 34,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/GlossLabial-FB.png" alt="Gloss Labial">
+					<div class="detalhes">
+						<p class="nome">Gloss Labial</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/glossLabialFentyBombHeat.png" alt="Gloss Labial Fenty Beauty Bomb Heat">
+					<div class="detalhes">
+						<p class="nome">Gloss Labial Fenty Beauty Bomb Heat</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/glossLabialRareBeauty.png" alt="Gloss Labial">
+					<div class="detalhes">
+						<p class="nome">Gloss Labial Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/HidratanteLabial.png" alt="Hidratante Labial">
+					<div class="detalhes">
+						<p class="nome">Hidratante Labial</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/kitFentyGlossBombFamilySet.png" alt="Kit Fenty Gloss Bomb Family">
+					<div class="detalhes">
+						<p class="nome">Kit Fenty Gloss Bomb Family</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/kitParaLábiosRareBeautyStayVulnerable .png" alt="Kit kitParaLábiosRareBeautyStayVulnerable">
+					<div class="detalhes">
+						<p class="nome">Kit para Lábios Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/lápisLabialFenty.png" alt="Lapis Labial Fenty Beauty">
+					<div class="detalhes">
+						<p class="nome">Lápis Labial Fenty Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/lápisLabialRareBeauty.png" alt="Lapis Labial Rare Beauty">
+					<div class="detalhes">
+						<p class="nome">Lápis Labial Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/lipBalmEsfolianteLabialFenty.png" alt="Lip Balm Esfoliante">
+					<div class="detalhes">
+						<p class="nome">Lip Balm Esfoliante Labial</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/lipOilRareBeauty.png" alt="lip Oil Rare Beauty">
+					<div class="detalhes">
+						<p class="nome">Lip Oil Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Lábios">
+					<img src="imagens/Labios/óleoLabialFentyGlossBombBronze.png" alt="Oleo labial">
+					<div class="detalhes">
+						<p class="nome">Óleo Labial</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<!--Produtos da seção Olhos-->
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/blushESombraBrunaTavares.png" alt="BlusheSombra BT">
+					<div class="detalhes">
+						<p class="nome">Blush e Sombra Bruna Tavares</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/delineadoLíquidoMetalizadFenty.png" alt="Deliniador Líquido Metalizad Fenty">
+					<div class="detalhes">
+						<p class="nome">Deliniador Líquido Metalized Fenty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/delineadorLíquidoFentyGlitty .png" alt="Deliniador Líquido Fenty Glitty">
+					<div class="detalhes">
+						<p class="nome">Deliniador Líquido Fenty Glitty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/kitAnastasiaBeverlyHillsRose.png" alt="Kit Anastacia">
+					<div class="detalhes">
+						<p class="nome">Kit Anastacia Beverly Hills Rose</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/lápisDelineadorEmGelRareBeauty.png" alt="Lapis Deliniador em Gel Rare Beauty">
+					<div class="detalhes">
+						<p class="nome">Lápis Deliniador em Gel Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/máscaraDeCíliosFentyBeauty.png" alt="máscaraDeCíliosFentyBeauty">
+					<div class="detalhes">
+						<p class="nome">Máscara de Cílios Fenty Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/máscaraDeCíliosRareBeauty.png" alt="máscaraDeCíliosRareBeauty">
+					<div class="detalhes">
+						<p class="nome">Máscara de Cílios Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/máscaraDeCíliosVolumeFentyFull.png" alt="máscaraDeCíliosVolumeFentyFull">
+					<div class="detalhes">
+						<p class="nome">Máscara de Cílios Volume Fenty Full</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/miniPaletaDeSombrasBorn.png" alt="miniPaletaDeSombrasBorn">
+					<div class="detalhes">
+						<p class="nome">Mini Paleta de Sombras Born</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/miniPaletaDeSombrasRabanneDuo.png" alt="miniPaletaDeSombrasRabanneDuo">
+					<div class="detalhes">
+						<p class="nome">Mini Paleta de Sombra Rabbane Duo</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasBareminerals.png" alt="Paleta de Sombras Bareminerals">
+					<div class="detalhes">
+						<p class="nome">Paleta de Sombras Bareminerals</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasBrunaTavares.png" alt="paletaDeSombrasBrunaTavares">
+					<div class="detalhes">
+						<p class="nome">Paleta de SOmbras Bruna Tavares</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasBrunaTavaresDisney.png" alt="paletaDeSombrasBrunaTavaresDisney">
+					<div class="detalhes">
+						<p class="nome">Paleta de Sombras Bruna Tavares Disney</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasCliniqueAllAbout.png" alt="paletaDeSombrasCliniqueAllAbout">
+					<div class="detalhes">
+						<p class="nome">Paleta de Sombras Clinique</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasDiorBackstage.png" alt="paletaDeSombrasDiorBackstage">
+					<div class="detalhes">
+						<p class="nome">Paleta de Sombras Dior Backstage</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasFentySnap.png" alt="paletaDeSombrasFentySnap">
+					<div class="detalhes">
+						<p class="nome">Paleta de Sombras Fenty Snap</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasFran.png" alt="paletaDeSombrasFran">
+					<div class="detalhes">
+						<p class="nome">Paleta de Sombras Fran</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasLancôme.png" alt="paletaDeSombrasLancôme">
+					<div class="detalhes">
+						<p class="nome">Paleta de Sombras Lancôme</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasMariMaria.png" alt="paletaDeSombrasMariMaria">
+					<div class="detalhes">
+						<p class="nome">Paleta de Sombras Mari Maria</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasNarsAfterglow.png" alt="paletaDeSombrasNarsAfterglow">
+					<div class="detalhes">
+						<p class="nome">Paleta de Sombras Nars Afterglow</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasRareBeauty.png" alt="paletaDeSombrasRareBeauty">
+					<div class="detalhes">
+						<p class="nome">Plaeta de Sombras Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/paletaDeSombrasTooFaced.png" alt="paletaDeSombrasTooFaced">
+					<div class="detalhes">
+						<p class="nome">Paleta de Sombras Too Faced</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombra duo stick larissa manoela byOcéane.png" alt="sombraduosticklarissamanoelabyOceane">
+					<div class="detalhes">
+						<p class="nome">Sombra Duo Stick</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombraCremosaMac.png" alt="sombraCremosaMac">
+					<div class="detalhes">
+						<p class="nome">Sombra Cremosa MAC</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombraDuoRoseIncSatin.png" alt="sombraDuoRoseIncSatin">
+					<div class="detalhes">
+						<p class="nome">Sombra Duo Rose </p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos" data-categoria="Face">
+					<img src="imagens/Olhos/sombraEIluminadorBrunaTavares.png" alt="sombraEIluminadorBrunaTavares">
+					<div class="detalhes">
+						<p class="nome">Sombra e Iluminador Bruna Tavares</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombraEmBastãoMatteFenty.png" alt="sombraEmBastãoMatteFenty">
+					<div class="detalhes">
+						<p class="nome">SOmbra em Bastão Matte Fenty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombraEmBastãoRareBeauty.png" alt="sombraEmBastãoRareBeauty">
+					<div class="detalhes">
+						<p class="nome">Sombra em Bastão Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombraEmGelLarissaManoelabyOcéane.png" alt="sombraEmGelLarissaManoelabyOcéane">
+					<div class="detalhes">
+						<p class="nome">Sombra em gel</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombraJellyMariMaria.png" alt="sombraJellyMariMaria">
+					<div class="detalhes">
+						<p class="nome">Sombra Jelly Mari Maria</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombraLíquidaRabanneShot.png" alt="sombraLíquidaRabanneShot">
+					<div class="detalhes">
+						<p class="nome">Sombra Líquida Rabanne Shot</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombraLíquidaRareBeautyStay.png" alt="sombraLíquidaRareBeautyStay">
+					<div class="detalhes">
+						<p class="nome">SOmbra Líquida Rare Beauty Stay</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombraNarsSingleEyeshadow.png" alt="sombraNarsSingleEyeshadow">
+					<div class="detalhes">
+						<p class="nome">Sombra Nars Single Eye shadow</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Olhos">
+					<img src="imagens/Olhos/sombraParaOsOlhosMacTrend.png" alt="sombraParaOsOlhosMacTrend">
+					<div class="detalhes">
+						<p class="nome">Sombra para os Olhos MAC</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<!--Produtos de Sobrancelha-->
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/ceraParaSobrancelhasPrecisely.png" alt="ceraParaSobrancelhasPrecisely">
+					<div class="detalhes">
+						<p class="nome">Cera para sobrancelhas</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/gelDeSobrancelhasBrunaTavares.png" alt="gelDeSobrancelhasBrunaTavares">
+					<div class="detalhes">
+						<p class="nome">Gel de sobrancelhas Bruna Tavares</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/gelParaSobrancelhasRareBeauty.png" alt="gelParaSobrancelhasRareBeauty">
+					<div class="detalhes">
+						<p class="nome">Gel para sobrancelhas Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/kitCareNaturalTravelEye.png" alt="kitCareNaturalTravelEye">
+					<div class="detalhes">
+						<p class="nome">Kit Care NAtural Travel Eye</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/kitDeSobrancelhasAnastasiaBeverlyHills.png" alt="kitAnastasiaBeverlyHillsRose">
+					<div class="detalhes">
+						<p class="nome">Kit sobrancelhas Anastasia Bervely HIlls</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/kitRealTechniquesPincéisParaSobrancelhas.png" alt="kitRealTechniquesPincéisParaSobrancelhas">
+					<div class="detalhes">
+						<p class="nome">Kit Real Tecniques Pinceis</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/lápisDeSobrancelhasBenefit.png" alt="lápisDeSobrancelhasBenefit">
+					<div class="detalhes">
+						<p class="nome">Lápis de Sobrancelhas Benefit</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/lápisDeSobrancelhasBrowMvp.png" alt="lápisDeSobrancelhasBrowMvp">
+					<div class="detalhes">
+						<p class="nome">Lápis de sobrancelha Brow MVP</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/lápisDeSobrancelhasEstéeLauder.png" alt="lápisDeSobrancelhasEstéeLauder">
+					<div class="detalhes">
+						<p class="nome">Lápis de sobracelha Etée Lauder</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/lápisDeSobrancelhasGuerlain.png" alt="lápisDeSobrancelhasGuerlain">
+					<div class="detalhes">
+						<p class="nome">Lápis de sobrancelha Guerlain</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/lápisDeSobrancelhasMacPro.png" alt="lápisDeSobrancelhasMacPro">
+					<div class="detalhes">
+						<p class="nome">Lápis de sobrancelha Mac Pro</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/lápisDeSobrancelhasSephora.png" alt="lápisDeSobrancelhasSephora>
+					<div class="detalhes">
+						<p class="nome">Lápis de sobrancelha Sephora</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/lápisParaSobrancelhaRareBeauty.png" alt="lápisParaSobrancelhaRareBeauty">
+					<div class="detalhes">
+						<p class="nome">Lápis para sobrancelha Rare Beauty</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/miniDefinidorDeSobrancelhasAnastasia.png" alt="miniDefinidorDeSobrancelhasAnastasia">
+					<div class="detalhes">
+						<p class="nome">Mini definidr de sobrancelhas ANastasia</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Sobrancelha">
+					<img src="imagens/Sobrancelha/miniLápisDeSobrancelhaAnastasia.png" alt="miniLápisDeSobrancelhaAnastasia">
+					<div class="detalhes">
+						<p class="nome">Mini lápis de sobrancelha Anastasia</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<!--Acessórios-->
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/kitCom3EsponjasMiniParaPó.png" alt="kitCom3EsponjasMiniParaPó">
+					<div class="detalhes">
+						<p class="nome">Kit com 3 esponjas Mini para pó</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/kitCom4EsponjasPuff2em1 .png" alt="kitCom4EsponjasPuff2em1">
+					<div class="detalhes">
+						<p class="nome">Kit com 4 esponjas Puff 2 em 1</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/kitDePincéisParaRostoeOlhos.png" alt="kitDePincéisParaRostoeOlhos">
+					<div class="detalhes">
+						<p class="nome">Kit de pincéis para rosto e olhos</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/necessairesDailyMakeupOcéane.png" alt="necessairesDailyMakeupOcéane">
+					<div class="detalhes">
+						<p class="nome">Necessaire Daily Makeup </p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/necessarieNeoprene4you.png" alt="necessarieNeoprene4you">
+					<div class="detalhes">
+						<p class="nome">Necessaire Neoprene 4you</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/pincelCutCreaseSephora.png" alt="pincelCutCreaseSephora">
+					<div class="detalhes">
+						<p class="nome">Pincel Cut Crease Sephora</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/pincelDeBlushRealTechniques.png" alt="pincelDeBlushRealTechniques">
+					<div class="detalhes">
+						<p class="nome">Pincel de BLush Real </p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/pincelDeBlushSephora.png" alt="pincelDeBlushSephora">
+					<div class="detalhes">
+						<p class="nome">Pincel de Blush Sephora</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/pincelDeDelineadorSephora.png" alt="pincelDeDelineadorSephora">
+					<div class="detalhes">
+						<p class="nome">Pincel deliniador Sephora</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/pincelDeIluminadorSephora.png" alt="pincelDeIluminadorSephora">
+					<div class="detalhes">
+						<p class="nome">Pincel de Iluminar Sephora</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/pincelDePóSephora.png" alt="pincelDePóSephora">
+					<div class="detalhes">
+						<p class="nome">Pincel de pó Sephora</p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
+					</div>
+				</div>
+
+				<div class="produto" data-categoria="Acessórios">
+					<img src="imagens/Acessorios/trioDeEsponjasRealTechniques.png" alt="trioDeEsponjasRealTechniques">
+					<div class="detalhes">
+						<p class="nome">Trio esponjas </p>
+						<p class="descricao">Cobertura Natural</p>
+						<p class="preco"> R$ 89,90</p>
 					</div>
 				</div>
 			</div>
@@ -67,5 +931,6 @@
 
 
 	<script src="telaDeMakeup.js"></script>
+	<script src="script.js"></script>
 </body>
 </html> 
