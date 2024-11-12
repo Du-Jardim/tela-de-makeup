@@ -17,7 +17,6 @@ document.querySelector('#search-button').addEventListener('click', function() {
 });
 //NAV BAR
 
-
 //lista produtos exemplo
 
 //funcao para carregar os produtos na página

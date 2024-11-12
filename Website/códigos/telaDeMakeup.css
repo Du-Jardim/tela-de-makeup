@@ -52,8 +52,6 @@ body {
     background-color: #777;
 }
 
-
-
 .logo {
     display: flex;
     align-items: center;
@@ -181,6 +179,7 @@ body {
 }
 /* Flexbox para organizar os produtos em várias linhas */
 .produtos {
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap; /* Permite que os produtos "quebrem" para a linha seguinte */
     gap: 20px; /* Espaço entre os cards */
@@ -189,15 +188,13 @@ body {
 }
 
 .produto {
-    flex: 1 1 200px; /* Tamanho base para cada produto */
-    max-width: 250px; /* Largura máxima para cada card */
+    width: 250px; /* Largura máxima para cada card */
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
     cursor: pointer;
-    box-sizing: border-box;
     padding: 16px;
 }
 .produto:hover{
