@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "telaDeProduto",
+			"path": "../../../telaDeProduto"
+		},
+		{
+			"name": "Website",
+			"path": ".."
+		},
+		{
+			"name": "SkinTones-Codigos-main",
+			"path": "../../../Downloads/SkinTones-Codigos-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "telaDeProduto"
+	}
+}
