@@ -17,6 +17,18 @@ document.querySelector('#search-button').addEventListener('click', function() {
 });
 //NAV BAR
 
+//banner
+let indiceAtual = 0;
+const banners = document.querySelector('.banners');
+const numeroDeBanners = document.querySelectorAll('.banner').length;
+
+function mudarBanner(){
+    indiceAtual = (indiceAtual + 1)% numeroDeBanners;
+    banners.style.transform = `translateX(-${indiceAtual * 100}%)`;
+}
+
+setInterval (mudarBanner, 3000);
+//banner
 //lista produtos exemplo
 
 //funcao para carregar os produtos na página
