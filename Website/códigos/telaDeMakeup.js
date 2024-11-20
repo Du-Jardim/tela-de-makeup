@@ -18,16 +18,31 @@ document.querySelector('#search-button').addEventListener('click', function() {
 //NAV BAR
 
 //banner
+//banner
+
+// Inicializa a variável para o índice do banner atual (começa em 0)
 let indiceAtual = 0;
+
+// Seleciona o contêiner de banners e conta o número de banners presentes
 const banners = document.querySelector('.banners');
 const numeroDeBanners = document.querySelectorAll('.banner').length;
 
-function mudarBanner(){
-    indiceAtual = (indiceAtual + 1)% numeroDeBanners;
-    banners.style.transform = `translateX(-${indiceAtual * 100}%)`;
+// Define a largura fixa do banner para calcular o deslocamento
+const larguraBanner = 1200;
+
+// Função para mudar o banner
+function mudarBanner() {
+    // Atualiza o índice do banner atual, usando o operador % para voltar ao início quando atingir o final
+    indiceAtual = (indiceAtual + 1) % numeroDeBanners; 
+
+    // Desloca o contêiner de banners para a esquerda, usando o índice atual e a largura do banner
+    banners.style.transform = `translateX(-${indiceAtual * larguraBanner}px)`; 
 }
 
-setInterval (mudarBanner, 3000);
+// Define o intervalo de tempo para a troca de banners (7 segundos)
+setInterval(mudarBanner, 3000);
+
+
 //banner
 //lista produtos exemplo
 
