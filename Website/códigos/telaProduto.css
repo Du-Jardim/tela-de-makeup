@@ -27,15 +27,31 @@ body{
 .avaliacao{
     display: flex;
 }
-
-#estrelas{
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    color: gold;
-    cursor: pointer;
-    font-size:30px;
+#estrelas { 
+    margin-bottom: 20px !important; /* pra aumentar a distancia do das estrelas  */
 }
+
+.avaliacao p {
+    margin-top: 15px !important;  /* auementa a distancia do texto do top da pg  */
+margin-left: 13px !important; /* o mais importante pra distanciar o texto das estrelas  */
+}
+ 
+
+/* css estrelas  */
+
+.estrela {
+    font-size: 30px;
+    color: gold;
+}
+
+.estrela.vazia {
+    color: lightgray;
+}
+
+
+/* css estrelas  end  */
+ 
+
 
 .preco{
     color: #e74c3c;

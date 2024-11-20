@@ -31,3 +31,5 @@ function abrirAba(evento, idAba){
   const aba = document.getElementById(idAba);
   aba.classList.add(".ativo");
 }
+
+
