@@ -95,15 +95,17 @@
 
             <p class="nome-tom-selecionado">Tom selecionado: Nenhum</p>
 
-            <div class="quantidade">
-                <button id="diminuir">-</button>
-                <span id="quantidade">1</span>
-                <button id="diminuir">+</button>
+            <div class="produto-acoes">
+                <div class="quantidade-controle">
+                    <button class="quantidade-botao" id="diminuir">-</button>
+                    <span class="quantidade-valor" id="quantidade">1</span>
+                    <button class="quantidade-botao" id="aumentar">+</button>
+                </div>                
+                <button class="adicionar-sacola">Adicionar á Sacola</button>
             </div>
-            
-            <button id="adicionar-sacola">Adicionar á Sacola</button>
-            
         </div>
+
+        
 
         <div class="video-produto">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/pt0Lhj-kqW0?si=ozO1XcG9eoFx3Cgw" 
@@ -114,43 +116,25 @@
         </div>
     </div>
 
-    <div class="abas">
-        <button class="link-aba" onclick="abrirAba(event, 'indicacoes')">Indicações</button>
-        <button class="link-aba" onclick="abrirAba(event, 'comprovacoes')">Comprovações</button>
-        <button class="link-aba" onclick="abrirAba(event, 'avaliacoes')">Avaliações</button>
-        <button class="link-aba" onclick="abrirAba(event, 'composicao')">Composição</button>
-        <button class="link-aba" onclick="abrirAba(event, 'uso')">Modo de Uso</button>
-    </div>
-
-    <div class="conteudo-aba", id="indicacoes">
-        <p>Controla a oleosidade</p>
-    </div>
-
-    <div class="conteudo-aba", id="comprovacoes">
-        <p>Resultados clínicos e teste</p>
-    </div>
-
-    <div class="conteudo-aba", id="avaliacoes">
-        <p>Avaliações de usuários</p>
-    </div>
-
-    <div class="conteudo-aba", id="composicao">
-        <p>Áciso salícilico, glicerina e etc</p>
-    </div>
-
-    <div class="conteudo-aba", id="uso">
-        <p>Modo correto de aplicar o produto</p>
-    </div>
-
-    <!--Produtos relacionados-->
-    <div class="produtos-recomendados">
-        <h3>Quer completar mais a necessaire?</h3>
-        <div class="cartao-produto">
-            <img src="/Website/códigos/imagens/Acessorios/trioDeEsponjasRealTechniques.png" alt="trioDeEsponjasRealTechniques">
-            <h4>Trio de Esponjas</h4>
-            <p>R$ 49,90</p>
-            <button>Compra</button>
+    <section class="detalhes-produto">
+        <nav class="abas">
+          <button class="aba ativa" data-tab="indicacoes">Indicações</button>
+          <button class="aba" data-tab="comprovacoes">Comprovações</button>
+          <button class="aba" data-tab="avaliacoes">Avaliações</button>
+          <button class="aba" data-tab="uso">Modo de Uso</button>
+          <button class="aba" data-tab="faq">Dúvidas Frequentes</button>
+        </nav>
+        <div class="conteudo-aba" id="indicacoes">
+          <ul>
+            <li><strong>Controlar a oleosidade</strong></li>
+            <li>Melhorar o viço</li>
+            <li>Proporcionar maciez</li>
+          </ul>
         </div>
+        <!-- Outras abas -->
+      </section>
+          
+
     </div>
     <script src="estrelas.js"></script>
     <script src="telaProduto.js"></script>
