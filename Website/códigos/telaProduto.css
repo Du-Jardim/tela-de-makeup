@@ -182,27 +182,54 @@ margin-left: 13px !important; /* o mais importante pra distanciar o texto das es
   }
 
 /*abas*/
-.detalhes-produto {
-    margin-top: 20px;
+/* Container das abas */
+.abas-container {
+    width: 100%;
   }
   
+  /* Títulos das abas */
   .abas {
+    width: 100%;
     display: flex;
-    gap: 10px;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ccc;
   }
   
   .aba {
-    padding: 5px 10px;
-    background-color: #eee;
-    border: 1px solid #ccc;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-right: 1px solid #ccc;
+  }
+  
+  .aba:hover {
+    background-color: #ddd;
+  }
+  
+  .aba.ativa {
+    background-color: #000;
+    color: #fff;
+    border-bottom: 2px solid #000;
+  }
+  
+  /* Conteúdo das abas */
+  .conteudo-abas {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
   }
   
   .conteudo-aba {
     display: none;
-    margin-top: 10px;
   }
   
   .conteudo-aba.ativa {
     display: block;
   }
+  

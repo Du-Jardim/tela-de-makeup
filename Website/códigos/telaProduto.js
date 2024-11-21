@@ -35,22 +35,24 @@
   spanQuantidade.textContent = quantidadeAtual
   }
   //abas
-  document.addEventListener('DOMContentLoaded', () => {
-    const abas = document.querySelectorAll('.aba');
-    const conteudosAba = document.querySelectorAll('.conteudo-aba');
-    
-    if (abas && conteudosAba) {
-      abas.forEach(aba => {
-        aba.addEventListener('click', () => {
-          abas.forEach(a => a.classList.remove('ativa'));
-          conteudosAba.forEach(ca => ca.classList.remove('ativa'));
-          
-          aba.classList.add('ativa');
-          document.getElementById(aba.dataset.tab).classList.add('ativa');
-        });
-      });
-    }
+// Seleciona as abas e os conteúdos
+const abas = document.querySelectorAll('.aba');
+const conteudos = document.querySelectorAll('.conteudo-aba');
+
+// Adiciona evento de clique às abas
+abas.forEach((aba) => {
+  aba.addEventListener('click', () => {
+    // Remove a classe "ativa" de todas as abas e conteúdos
+    abas.forEach((a) => a.classList.remove('ativa'));
+    conteudos.forEach((conteudo) => conteudo.classList.remove('ativa'));
+
+    // Adiciona a classe "ativa" à aba clicada e ao conteúdo correspondente
+    aba.classList.add('ativa');
+    const conteudoAlvo = document.getElementById(aba.dataset.tab);
+    conteudoAlvo.classList.add('ativa');
   });
+});
+
 })();
 
 

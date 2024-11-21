@@ -116,23 +116,32 @@
         </div>
     </div>
 
-    <section class="detalhes-produto">
-        <nav class="abas">
-          <button class="aba ativa" data-tab="indicacoes">Indicações</button>
-          <button class="aba" data-tab="comprovacoes">Comprovações</button>
-          <button class="aba" data-tab="avaliacoes">Avaliações</button>
-          <button class="aba" data-tab="uso">Modo de Uso</button>
-          <button class="aba" data-tab="faq">Dúvidas Frequentes</button>
-        </nav>
-        <div class="conteudo-aba" id="indicacoes">
-          <ul>
-            <li><strong>Controlar a oleosidade</strong></li>
-            <li>Melhorar o viço</li>
-            <li>Proporcionar maciez</li>
-          </ul>
+    <div class="abas-container">
+        <!-- Títulos das Abas -->
+        <div class="abas">
+          <div class="aba ativa" data-tab="descricao">Indicações</div>
+          <div class="aba" data-tab="avaliacoes">Comprovações</div>
+          <div class="aba" data-tab="informacoes">Avaliações</div>
+          <div class="aba" data-tab="informacoes">Composição</div>
+          <div class="aba" data-tab="informacoes">Modo de Uso</div>
         </div>
-        <!-- Outras abas -->
-      </section>
+      
+        <!-- Conteúdo das Abas -->
+        <div class="conteudo-abas">
+          <div id="descricao" class="conteudo-aba ativa">
+            <h3>Descrição do Produto</h3>
+            <p>Detalhes completos sobre o produto.</p>
+          </div>
+          <div id="avaliacoes" class="conteudo-aba">
+            <h3>Avaliações</h3>
+            <p>Veja o que outros clientes estão dizendo!</p>
+          </div>
+          <div id="informacoes" class="conteudo-aba">
+            <h3>Informações Técnicas</h3>
+            <p>Especificações detalhadas e dados técnicos do produto.</p>
+          </div>
+        </div>
+      </div>
           
 
     </div>
