@@ -180,56 +180,62 @@ margin-left: 13px !important; /* o mais importante pra distanciar o texto das es
         text-align: center;
     }
   }
-
-/*abas*/
 /* Container das abas */
 .abas-container {
-    width: 100%;
-  }
-  
-  /* Títulos das abas */
-  .abas {
-    width: 100%;
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding não afete o layout */
+}
+
+/* Títulos das abas */
+.abas {
     display: flex;
-    justify-content: space-around;
+    margin: 0;
+    padding: 0;
     background-color: #f0f0f0;
     border-bottom: 2px solid #ccc;
-  }
-  
-  .aba {
-    flex: 1;
+}
+
+.aba {
+    flex: 1; /* Cada aba ocupa exatamente uma fração igual do espaço */
     text-align: center;
-    padding: 10px;
+    padding: 15px 0;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-right: 1px solid #ccc;
-  }
-  
-  .aba:hover {
+    box-sizing: border-box; /* Garante que padding e bordas não alterem o tamanho */
+}
+
+.aba:last-child {
+    border-right: none; /* Remove a borda direita da última aba */
+}
+
+.aba:hover {
     background-color: #ddd;
-  }
-  
-  .aba.ativa {
+}
+
+.aba.ativa {
     background-color: #000;
     color: #fff;
     border-bottom: 2px solid #000;
-  }
-  
-  /* Conteúdo das abas */
-  .conteudo-abas {
+}
+
+/* Conteúdo das abas */
+.conteudo-abas {
     width: 100%;
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-top: none;
-  }
-  
-  .conteudo-aba {
+}
+
+.conteudo-aba {
     display: none;
-  }
-  
-  .conteudo-aba.ativa {
+}
+
+.conteudo-aba.ativa {
     display: block;
-  }
-  
+}
+    
