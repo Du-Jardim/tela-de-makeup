@@ -163,6 +163,32 @@ margin-left: 13px !important; /* o mais importante pra distanciar o texto das es
     color: #000;
 }
 
+.produto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.img-produto {
+    flex: 1;
+    margin-right: 20px; /* Espaço entre a imagem principal e as miniaturas */
+}
+
+.miniaturas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre as miniaturas */
+}
+
+.miniatura {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+.miniatura.selecionada {
+    border: 2px solid #000; /* Destaque para a miniatura selecionada */
+}
 
 
 @media (max-width: 768px) {

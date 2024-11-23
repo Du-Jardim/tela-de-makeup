@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Produto</title>
     <link rel="stylesheet" href="telaProduto.css">
-    <!--Link para FontAwesone-->
+    <!--Link para FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!--Nav Bar-->
     <!--Nav Bar-->
-
     <div class="produto-container">
         <div class="img-produto">
-            <img src="imagens/Face/Base-1Light.png" alt="Base1">
+            <img src="imagens/Face/Base-1Light.png" alt="Base1" id="imagem-principal">
+        </div>
+
+        <!-- Miniaturas ao lado da imagem principal -->
+        <div class="miniaturas">
+            <img src="imagens/Face/Base-1Light.png" alt="Base1" class="miniatura">
+            <img src="imagens/Face/Base-2Light.png" alt="Base2" class="miniatura">
+            <img src="imagens/Face/Base-3Light.png" alt="Base3" class="miniatura">
         </div>
 
         <div class="detalhes-produto">
@@ -24,7 +30,7 @@
                 <div id="estrelas">
                     <span class="estrela cheia">&#9733;</span>
                     <span class="estrela cheia">&#9733;</span>
-                    <span class="estrela cheia">&#9733;</span> <!--estrelas -->
+                    <span class="estrela cheia">&#9733;</span>
                     <span class="estrela cheia">&#9733;</span>
                     <span class="estrela vazia">&#9733;</span>
                 </div>  
@@ -32,123 +38,131 @@
                 <p><span>  4.8</span> | 100 Avaliações</p>
             </div>
             <p class="preco">R$ 285,00</p>
-            
+            <p class="detalhes">Base de cobertura média a completa com tecnologia adaptativa ao clima para resistir ao calor, suor e oleosidade</p>
 
-            <p class="detalhes">Base de cobertura média a completa com tecnologia adaptativa ao clima para resistir ao calor,suor e oleosidade</p>
-        
-        
             <div class="selecao-tons">
-            <h3>Escolha seu tom:</h3>
-            <div class="tons-container">
-                <div class="tom" style="background-color: #fbf7f6;" data-tone="100"></div>
-                <div class="tom" style="background-color: #f8f3f0;" data-tone="110"></div>
-                <div class="tom" style="background-color: #f6eeea;" data-tone="120"></div>
-                <div class="tom" style="background-color: #f4e9e5;" data-tone="130"></div>
-                <div class="tom" style="background-color: #f1e5df;" data-tone="140"></div>
-                <div class="tom" style="background-color: #efe0d9;" data-tone="150"></div>
-                <div class="tom" style="background-color: #ecdbd4;" data-tone="160"></div>
-                <div class="tom" style="background-color: #ead7ce;" data-tone="170"></div>
-                <div class="tom" style="background-color: #e7d2c8;" data-tone="180"></div>
-                <div class="tom" style="background-color: #e5cdc2;" data-tone="190"></div>
-                <div class="tom" style="background-color: #e2c8bd;" data-tone="200"></div>
-                <div class="tom" style="background-color: #e0c4b7;" data-tone="210"></div>
-                <div class="tom" style="background-color: #debfb1;" data-tone="220"></div>
-                <div class="tom" style="background-color: #dbbaac;" data-tone="230"></div>
-                <div class="tom" style="background-color: #d9b6a6;" data-tone="240"></div>
-                <div class="tom" style="background-color: #d6b1a0;" data-tone="250"></div>
-                <div class="tom" style="background-color: #d4ac9a;" data-tone="260"></div>
-                <div class="tom" style="background-color: #d1a895;" data-tone="270"></div>
-                <div class="tom" style="background-color: #cfa38f;" data-tone="280"></div>
-                <div class="tom" style="background-color: #cc9e89;" data-tone="290"></div>
-                <div class="tom" style="background-color: #ca9984;" data-tone="300"></div>
-                <div class="tom" style="background-color: #c8957e;" data-tone="310"></div>
-                <div class="tom" style="background-color: #c59078;" data-tone="320"></div>
-                <div class="tom" style="background-color: #c38b72;" data-tone="330"></div>
-                <div class="tom" style="background-color: #c0876d;" data-tone="340"></div>
-                <div class="tom" style="background-color: #be8267;" data-tone="350"></div>
-                <div class="tom" style="background-color: #bb7d61;" data-tone="360"></div>
-                <div class="tom" style="background-color: #b9795c;" data-tone="370"></div>
-                <div class="tom" style="background-color: #b67456;" data-tone="380"></div>
-                <div class="tom" style="background-color: #b46f50;" data-tone="390"></div>
-                <div class="tom" style="background-color: #b16b4b;" data-tone="400"></div>
-                <div class="tom" style="background-color: #ab6749;" data-tone="410"></div>
-                <div class="tom" style="background-color: #a56446;" data-tone="420"></div>
-                <div class="tom" style="background-color: #a06044;" data-tone="430"></div>
-                <div class="tom" style="background-color: #9a5d41;" data-tone="440"></div>
-                <div class="tom" style="background-color: #94593f;" data-tone="450"></div>
-                <div class="tom" style="background-color: #8e563d;" data-tone="460"></div>
-                <div class="tom" style="background-color: #89533a;" data-tone="470"></div>
-                <div class="tom" style="background-color: #834f38;" data-tone="480"></div>
-                <div class="tom" style="background-color: #7d4c35;" data-tone="490"></div>
-                <div class="tom" style="background-color: #784833;" data-tone="500"></div>
-                <div class="tom" style="background-color: #724530;" data-tone="510"></div>
-                <div class="tom" style="background-color: #6c412e;" data-tone="520"></div>
-                <div class="tom" style="background-color: #663e2b;" data-tone="530"></div>
-                <div class="tom" style="background-color: #613a29;" data-tone="540"></div>
-                <div class="tom" style="background-color: #5b3727;" data-tone="550"></div>
-                <div class="tom" style="background-color: #553324;" data-tone="560"></div>
-                <div class="tom" style="background-color: #503022;" data-tone="570"></div>
-                <div class="tom" style="background-color: #4a2c1f;" data-tone="580"></div>
-                <div class="tom" style="background-color: #44291d;" data-tone="590"></div>
-                <div class="tom" style="background-color: #3e261a;" data-tone="600"></div>
-            </div>
+                <h3>Escolha seu tom:</h3>
+                <div class="tons-container">
+                  <div class="tom" style="background-color: #fbf7f6;" data-tone="100"></div>
+                  <div class="tom" style="background-color: #f8f3f0;" data-tone="110"></div>
+                  <div class="tom" style="background-color: #f6eeea;" data-tone="120"></div>
+                  <div class="tom" style="background-color: #f4e9e5;" data-tone="130"></div>
+                  <div class="tom" style="background-color: #f1e5df;" data-tone="140"></div>
+                  <div class="tom" style="background-color: #efe0d9;" data-tone="150"></div>
+                  <div class="tom" style="background-color: #ecdbd4;" data-tone="160"></div>
+                  <div class="tom" style="background-color: #ead7ce;" data-tone="170"></div>
+                  <div class="tom" style="background-color: #e7d2c8;" data-tone="180"></div>
+                  <div class="tom" style="background-color: #e5cdc2;" data-tone="190"></div>
+                  <div class="tom" style="background-color: #e2c8bd;" data-tone="200"></div>
+                  <div class="tom" style="background-color: #e0c4b7;" data-tone="210"></div>
+                  <div class="tom" style="background-color: #debfb1;" data-tone="220"></div>
+                  <div class="tom" style="background-color: #dbbaac;" data-tone="230"></div>
+                  <div class="tom" style="background-color: #d9b6a6;" data-tone="240"></div>
+                  <div class="tom" style="background-color: #d6b1a0;" data-tone="250"></div>
+                  <div class="tom" style="background-color: #d4ac9a;" data-tone="260"></div>
+                  <div class="tom" style="background-color: #d1a895;" data-tone="270"></div>
+                  <div class="tom" style="background-color: #cfa38f;" data-tone="280"></div>
+                  <div class="tom" style="background-color: #cc9e89;" data-tone="290"></div>
+                  <div class="tom" style="background-color: #ca9984;" data-tone="300"></div>
+                  <div class="tom" style="background-color: #c8957e;" data-tone="310"></div>
+                  <div class="tom" style="background-color: #c59078;" data-tone="320"></div>
+                  <div class="tom" style="background-color: #c38b72;" data-tone="330"></div>
+                  <div class="tom" style="background-color: #c0876d;" data-tone="340"></div>
+                  <div class="tom" style="background-color: #be8267;" data-tone="350"></div>
+                  <div class="tom" style="background-color: #bb7d61;" data-tone="360"></div>
+                  <div class="tom" style="background-color: #b9795c;" data-tone="370"></div>
+                  <div class="tom" style="background-color: #b67456;" data-tone="380"></div>
+                  <div class="tom" style="background-color: #b46f50;" data-tone="390"></div>
+                  <div class="tom" style="background-color: #b16b4b;" data-tone="400"></div>
+                  <div class="tom" style="background-color: #ab6749;" data-tone="410"></div>
+                  <div class="tom" style="background-color: #a56446;" data-tone="420"></div>
+                  <div class="tom" style="background-color: #a06044;" data-tone="430"></div>
+                  <div class="tom" style="background-color: #9a5d41;" data-tone="440"></div>
+                  <div class="tom" style="background-color: #94593f;" data-tone="450"></div>
+                  <div class="tom" style="background-color: #8e563d;" data-tone="460"></div>
+                  <div class="tom" style="background-color: #89533a;" data-tone="470"></div>
+                  <div class="tom" style="background-color: #834f38;" data-tone="480"></div>
+                  <div class="tom" style="background-color: #7d4c35;" data-tone="490"></div>
+                  <div class="tom" style="background-color: #784833;" data-tone="500"></div>
+                  <div class="tom" style="background-color: #724530;" data-tone="510"></div>
+                  <div class="tom" style="background-color: #6c412e;" data-tone="520"></div>
+                  <div class="tom" style="background-color: #663e2b;" data-tone="530"></div>
+                  <div class="tom" style="background-color: #613a29;" data-tone="540"></div>
+                  <div class="tom" style="background-color: #5b3727;" data-tone="550"></div>
+                  <div class="tom" style="background-color: #553324;" data-tone="560"></div>
+                  <div class="tom" style="background-color: #503022;" data-tone="570"></div>
+                  <div class="tom" style="background-color: #4a2c1f;" data-tone="580"></div>
+                  <div class="tom" style="background-color: #44291d;" data-tone="590"></div>
+                  <div class="tom" style="background-color: #3e261a;" data-tone="600"></div>
+                </div>
+                <p class="nome-tom-selecionado">Tom selecionado: Nenhum</p>
 
-            <p class="nome-tom-selecionado">Tom selecionado: Nenhum</p>
-
-            <div class="produto-acoes">
-                <div class="quantidade-controle">
-                    <button class="quantidade-botao" id="diminuir">-</button>
-                    <span class="quantidade-valor" id="quantidade">1</span>
-                    <button class="quantidade-botao" id="aumentar">+</button>
-                </div>                
-                <button class="adicionar-sacola">Adicionar á Sacola</button>
+                <div class="produto-acoes">
+                    <div class="quantidade-controle">
+                        <button class="quantidade-botao" id="diminuir">-</button>
+                        <span class="quantidade-valor" id="quantidade">1</span>
+                        <button class="quantidade-botao" id="aumentar">+</button>
+                    </div>                
+                    <button class="adicionar-sacola">Adicionar á Sacola</button>
+                </div>
+                <div class="video-produto">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/pt0Lhj-kqW0?si=ozO1XcG9eoFx3Cgw" 
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                  encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen></iframe>
+              </div>
+          </div>
             </div>
         </div>
 
-        
-
-        <div class="video-produto">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/pt0Lhj-kqW0?si=ozO1XcG9eoFx3Cgw" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-
-
-
-    </div>
-
+   
 
     <div class="abas-container">
-      <!-- Títulos das Abas -->
-      <div class="abas">
-        <div class="aba ativa" data-tab="descricao">Indicações</div>
-        <div class="aba" data-tab="avaliacoes">Comprovações</div>
-        <div class="aba" data-tab="informacoes">Avaliações</div>
-        <div class="aba" data-tab="informacoes">Composição</div>
-        <div class="aba" data-tab="informacoes">Modo de Uso</div>
-      </div>
+        <!-- Títulos das Abas -->
+        <div class="abas">
+            <div class="aba ativa" data-tab="descricao">Indicações</div>
+            <div class="aba" data-tab="avaliacoes">Comprovações</div>
+            <div class="aba" data-tab="informacoes">Avaliações</div>
+            <div class="aba" data-tab="informacoes">Composição</div>
+            <div class="aba" data-tab="informacoes">Modo de Uso</div>
+        </div>
     
-      <!-- Conteúdo das Abas -->
-      <div class="conteudo-abas">
-        <div id="descricao" class="conteudo-aba ativa">
-          <h3>Descrição do Produto</h3>
-          <p>Detalhes completos sobre o produto.</p>
+        <!-- Conteúdo das Abas -->
+        <div class="conteudo-abas">
+            <div id="descricao" class="conteudo-aba ativa">
+                <h3>Descrição do Produto</h3>
+                <p>Detalhes completos sobre o produto.</p>
+            </div>
+            <div id="avaliacoes" class="conteudo-aba">
+                <h3>Avaliações</h3>
+                <p>Veja o que outros clientes estão dizendo!</p>
+            </div>
+            <div id="informacoes" class="conteudo-aba">
+                <h3>Informações Técnicas</h3>
+                <p>Especificações detalhadas e dados técnicos do produto.</p>
+            </div>
         </div>
-        <div id="avaliacoes" class="conteudo-aba">
-          <h3>Avaliações</h3>
-          <p>Veja o que outros clientes estão dizendo!</p>
-        </div>
-        <div id="informacoes" class="conteudo-aba">
-          <h3>Informações Técnicas</h3>
-          <p>Especificações detalhadas e dados técnicos do produto.</p>
-        </div>
-      </div>
     </div>
         
     <script src="estrelas.js"></script>
     <script src="telaProduto.js"></script>
+
+    <!-- JavaScript para troca de imagem -->
+    <script>
+        // Selecione as miniaturas e a imagem principal
+        const miniaturas = document.querySelectorAll('.miniaturas img');
+        const imagemPrincipal = document.getElementById('imagem-principal');
+
+        miniaturas.forEach((miniatura) => {
+            miniatura.addEventListener('click', () => {
+                // Troca a imagem principal
+                imagemPrincipal.src = miniatura.src;
+
+                // Marca a miniatura selecionada
+                miniaturas.forEach((img) => img.classList.remove('selecionada'));
+                miniatura.classList.add('selecionada');
+            });
+        });
+    </script>
 </body>
 </html>
