@@ -20,27 +20,33 @@ document.querySelector('#search-button').addEventListener('click', function() {
 //banner
 //banner
 
-// Inicializa a variável para o índice do banner atual (começa em 0)
 let indiceAtual = 0;
 
-// Seleciona o contêiner de banners e conta o número de banners presentes
+const carrossel = document.querySelector('.carrossel');
 const banners = document.querySelector('.banners');
 const numeroDeBanners = document.querySelectorAll('.banner').length;
 
-// Define a largura fixa do banner para calcular o deslocamento
-const larguraBanner = 1200;
-
 // Função para mudar o banner
 function mudarBanner() {
-    // Atualiza o índice do banner atual, usando o operador % para voltar ao início quando atingir o final
-    indiceAtual = (indiceAtual + 1) % numeroDeBanners; 
+    // Calcula a largura atual do carrossel
+    const larguraBanner = carrossel.offsetWidth;
 
-    // Desloca o contêiner de banners para a esquerda, usando o índice atual e a largura do banner
-    banners.style.transform = `translateX(-${indiceAtual * larguraBanner}px)`; 
+    // Atualiza o índice do banner atual
+    indiceAtual = (indiceAtual + 1) % numeroDeBanners;
+
+    // Desloca o contêiner de banners
+    banners.style.transform = `translateX(-${indiceAtual * larguraBanner}px)`;
 }
 
-// Define o intervalo de tempo para a troca de banners (7 segundos)
+// Troca o banner a cada 3 segundos
 setInterval(mudarBanner, 3000);
+
+// Ajusta o carrossel ao redimensionar a tela
+window.addEventListener('resize', () => {
+    // Atualiza a posição do carrossel ao redimensionar
+    const larguraBanner = carrossel.offsetWidth;
+    banners.style.transform = `translateX(-${indiceAtual * larguraBanner}px)`;
+});
 
 
 //banner

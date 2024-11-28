@@ -131,29 +131,34 @@ body {
 
 /* Estilo do carrossel */
 .carrossel {
-    width: 1200px; /* Define a largura fixa do carrossel em 1200px */
-    height: 400px; /* Define a altura fixa do carrossel em 400px */
-    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a área do carrossel */
-    position: relative; /* Permite o uso de posicionamento dentro do carrossel */
-    margin-left: 70px; /* Aplica uma margem à esquerda do carrossel */
-    margin-top: 10px; /* Aplica uma margem no topo do carrossel */
+    width: 100%; /* Ocupa 100% da largura disponível */
+    max-width: 1200px; /* Define uma largura máxima */
+    height: 400px; /* Altura fixa do carrossel */
+    overflow: hidden; /* Oculta conteúdo que excede o contêiner */
+    margin: 10px auto; /* Centraliza horizontalmente */
+    position: relative; /* Necessário para posicionar corretamente os banners */
 }
 
-/* Estilo dos banners dentro do carrossel */
 .banners {
-    display: flex; /* Utiliza o modelo de layout flexbox para organizar os banners horizontalmente */
-    transition: transform 0.5s ease; /* Aplica uma transição suave de 0.5s para o movimento dos banners */
-    width: 300%; /* Define a largura do contêiner dos banners como 3 vezes a largura do carrossel (para 3 banners) */
+    display: flex; /* Alinha os banners horizontalmente */
+    transition: transform 0.9s ease; /* Animação suave ao trocar banners */
 }
 
-/* Estilo de cada banner */
 .banner {
-    width: 33.333%; /* Cada banner ocupa 1/3 da largura do contêiner .banners, já que são 3 banners */
-    height: 400px; /* Define a altura de cada banner como 400px */
-    background-size: cover; /* Ajusta as imagens de fundo para cobrir todo o espaço do banner, mantendo a proporção */
-    background-position: center; /* Centraliza o conteúdo da imagem dentro do banner */
-    flex-shrink: 0; /* Impede que os banners encolham se o tamanho do contêiner mudar */
+    flex-shrink: 0; /* Impede o redimensionamento automático dos banners */
+    width: 100%; /* Cada banner ocupa 100% da largura do carrossel */
+    height: 400px; /* Altura fixa */
+    border-radius: 10px;
 }
+
+.banner img {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner do banner */
+    height: 100%; /* Altura igual ao contêiner do banner */
+    object-fit: contain; /* Mantém a proporção original da imagem */
+    object-position: center; /* Centraliza a imagem */
+}
+
+
 
 
 

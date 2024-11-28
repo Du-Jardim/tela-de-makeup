@@ -1,4 +1,31 @@
 (() => {
+
+  //navbar
+  // Adiciona funcionalidade de redirecionamento ao clicar no logo//
+  document.querySelector('.logo').addEventListener('click', function(event) {
+  event.preventDefault();
+  window.location.href = 'index.html';  // Redireciona para a página inicial
+});
+
+// Funcionalidade de pesquisa
+  document.querySelector('#search-button').addEventListener('click', function() {
+  const query = document.querySelector('#search-bar').value;
+  if (query) {
+      alert('Você pesquisou por: ' + query);
+      // Aqui você pode adicionar a lógica de pesquisa para redirecionar ou buscar produtos
+  } else {
+      alert('Digite algo para buscar.');
+  }
+});
+
+//thumbnails
+document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+  thumbnail.addEventListener('click', function() {
+      const mainImage = document.querySelector('.img-produto img'); // Seleciona a imagem principal
+      mainImage.src = this.src; // Atualiza com a miniatura clicada
+  });
+});
+
   document.querySelectorAll('.tom').forEach(tom => {
     tom.addEventListener('click', function(){
         document.querySelectorAll('.tom').forEach(t => t.classList.remove('selecionado'));
@@ -40,16 +67,17 @@ const abas = document.querySelectorAll('.aba');
 const conteudos = document.querySelectorAll('.conteudo-aba');
 
 // Adiciona evento de clique às abas
-abas.forEach((aba) => {
+document.querySelectorAll('.aba').forEach(aba => {
   aba.addEventListener('click', () => {
-    // Remove a classe "ativa" de todas as abas e conteúdos
-    abas.forEach((a) => a.classList.remove('ativa'));
-    conteudos.forEach((conteudo) => conteudo.classList.remove('ativa'));
+      // Remover a classe ativa de todas as abas
+      document.querySelectorAll('.aba').forEach(el => el.classList.remove('ativa'));
+      // Adicionar a classe ativa na aba clicada
+      aba.classList.add('ativa');
 
-    // Adiciona a classe "ativa" à aba clicada e ao conteúdo correspondente
-    aba.classList.add('ativa');
-    const conteudoAlvo = document.getElementById(aba.dataset.tab);
-    conteudoAlvo.classList.add('ativa');
+      // Exibir o conteúdo correspondente
+      const conteudo = document.querySelector(`#${aba.dataset.tab}`);
+      document.querySelectorAll('.conteudo-aba').forEach(el => el.classList.remove('ativa'));
+      conteudo.classList.add('ativa');
   });
 });
 
