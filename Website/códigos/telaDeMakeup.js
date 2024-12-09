@@ -52,6 +52,31 @@ window.addEventListener('resize', () => {
 //banner
 //lista produtos exemplo
 
+//parte nova
+ // Função para rolagem suave do carrossel
+ const carousel = document.querySelector('.carrossel');
+ let scrollAmount = 0;
+ 
+ function scrollCarousel() {
+     if (scrollAmount < carrossel.scrollWidth - carrossel.offsetWidth) {
+         scrollAmount += 300;
+         carrossel.scrollTo({
+             left: scrollAmount,
+             behavior: 'smooth'
+         });
+     } else {
+         scrollAmount = 0;
+         carrossel.scrollTo({
+             left: scrollAmount,
+             behavior: 'smooth'
+         });
+     }
+ }
+ 
+ // Intervalo para rolar automaticamente
+ setInterval(autoScrollCarrossel, 3000);
+ 
+//parte nova
 //funcao para carregar os produtos na página
 function carregarProdutos(){
     const listaProdutos = document.getElementById('listaProdutos');

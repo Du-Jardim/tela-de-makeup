@@ -167,6 +167,52 @@ body {
     display: flex;
 }
 
+/*parte nova*/
+.carrossel-container{
+    min-width: 250px;
+    height: auto;
+    border: 1px solid black;
+    margin: 20px 20px 20px;
+    padding: 20px 20px;
+}
+
+.carrossel{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.produto{
+    min-width:  250px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.produto img{
+    width: 100%;
+    height: auto;
+}
+
+/*Responsividade*/
+
+@media (max-width:768px){
+    .banner h1{
+        font-size: 18px;
+    }
+
+    .carrossel{
+        gap: 10px;
+    }
+
+    .produto{
+        min-width: 200px;
+    }
+}
+/*parte nova*/
 /*Estilização de menu filtros*/
 .filtros{
     border-radius: 10px;
